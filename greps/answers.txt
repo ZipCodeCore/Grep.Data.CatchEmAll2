@@ -1,29 +1,56 @@
 # Part 1
 ### a)
+filescan_00.1
+ggrep -P "blas" filescan_00.1>../captured/blastoise.txt
+ggrep -P "butt" filescan_00.1>../captured/butterfree.txt
+ggrep -P "bulb" filescan_00.1>../captured/bulbasaur.txt  
+ggrep -P "beed" filescan_00.1>../captured/beedrill11.txt   
+
+filescan_00.2
+ggrep -P "meleon" filescan_00.2 >../captured/charmeleon.txt or (ggrep -P "meleon" *)
+ggrep -P "mander" filescan_00.2>../captured/charmander.txt
+ggrep -P "izard" filescan_00.2>../captured/charizard.txt
 
 
+filescan_00.3
+ggrep -P "ivys" filescan_00.3>../captured/ivysaur.txt
+ggrep -P "jig" filescan_00.3>../captured/jigglypuff.txt
+ggrep -P "meow" filescan_00.3>../captured/meowth.txt
+ggrep -P "pika" filescan_00.3>../captured/pikachu.txt
 
+
+filescan_00.4
+ggrep -P "psyd" filescan_00.4>../captured/psyduck.txt
+ggrep -P "squi" filescan_00.4>../captured/squirtle.txt
+ggrep -P "venu" filescan_00.4>../captured/venusaur.txt
+ggrep -P "wart" filescan_00.4>../captured/wartortle.txt
 
 ### b)
 
+Saved to captured
 
 
 ### c)
-
-
-
-
-
-
-
-
-
-
+beedrill -> filescan_00.1
+bulbasaur -> filescan_00.1
+butterfree -> filescan_00.1
+blastoise -> filescan_00.1
+charmander -> filescan_00.2
+charmeleon -> filescan_00.2
+charizard -> filescan_00.2
+pikachu -> filescan_00.3
+ivysaur -> filescan_00.3
+jigglypuff -> filescan_00.3
+meowth -> filescan_00.3
+psyduck -> filescan_00.4
+squirtle -> filescan_00.4
+venusaur -> filescan_00.4
+wartortle -> filescan_00.4
 
 
 
 # Part 2
-### a)
+### a) grep -r -E 'zcw|tbap' captured | wc -l
 
 
 
@@ -32,7 +59,15 @@
 
 ### b)
 
+wc -l captured/*.txt | sort -r
 
+The three biggest are :
+pikachu -> 40 lines
+charizard -> 40 lines
+beedrill -> 40 Lines
+
+I did a line count on all the files in captured using wc -l
+and piped the output to sort using the -r flag for reverse.
 
 
 
